@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css"> 
+</head>
+<body>
+    <header>
+        <div class="menu--c">
+            <div class="menu--logo">
+                <a href="">IMC</a>
+            </div> <!-- .menu--logo -->
+            <div class="menu--info">powered by Luiz</div> <!-- .menu-info -->
+        </div> <!-- .menu--c -->
+    </header>
+
+    <main>
+        <section class="main--calc">
+            <div class="main--left">
+                <h1>Calcule o seu IMC.</h1>
+                <p>IMC é a sigla para Índice de Massa Corporânea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+                <form>
+                    <input type="number" name="height" class="main--height" placeholder="Digite a sua altura. Ex: 1.5 (em metros)" required="" >
+                    <input type="number" name="weight" class="main--weight" placeholder="Digite o seu peso. Ex: 75.3 (em kg)" required="" >
+                    <button class="main--btn">Calcular</button>
+                </form>
+                <div class="main--result"></div> <!-- .main--result -->
+            </div> <!-- .main--left -->
+            <div class="main--right">
+                <div class="main--right-index magreza">
+                    <img src="assets/img/thumb-down.png">
+                    <div class="main--index-title">Magreza</div> <!-- .main--index-title -->
+                    <span>IMC está entre <strong>0</strong> e <strong>18.5</strong></span>
+                </div> <!-- .main--right-index -->
+                <div class="main--right-index normal">
+                    <img src="assets/img/like.png">
+                    <div class="main--index-title">Normal</div> <!-- .main--index-title -->
+                    <span>IMC está entre <strong>18.5</strong> e <strong>24.9</strong></span>
+                </div> <!-- .main--right-index -->
+                <div class="main--right-index sobrepeso">
+                    <img src="assets/img/thumb-down.png">
+                    <div class="main--index-title">Sobrepeso</div> <!-- .main--index-title -->
+                    <span>IMC está entre <strong>24.9</strong> e <strong>30</strong></span>
+                </div> <!-- .main--right-index -->
+                <div class="main--right-index obesidade">
+                    <img src="assets/img/thumb-down.png">
+                    <div class="main--index-title">Obesidade</div> <!-- .main--index-title -->
+                    <span>IMC está entre <strong>30</strong> e <strong>99</strong></span>
+                </div> <!-- .main--right-index -->
+
+            </div> <!-- .main--right -->
+        </section> <!-- .main--calc -->
+    </main>
+    
+</body>
+</html>
